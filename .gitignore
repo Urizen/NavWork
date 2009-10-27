@@ -12,4 +12,4 @@ build/*
 .DS_Store
 profile
 
-#This is to test the commit function on git
+#This is to test the commit function on git which has now changed.
