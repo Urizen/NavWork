@@ -14,7 +14,11 @@
 @synthesize label;
 @synthesize message;
 
-
+//this is used instead of viewDidLoad because the view corresponding to this controller
+//will be reused and the viewDidLoad method is only called the first time that a controller's
+//view is loaded.
+//
+//This method is called every time a view is about to be drawn.
 - (void) viewWillAppear:(BOOL)animated {
 	
 	
