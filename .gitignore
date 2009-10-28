@@ -11,11 +11,3 @@ build/*
 # osx noise
 .DS_Store
 profile
-
-
-
-#This is to test the commit function on git which has now //this is an edit
-
-#This is an addition.
-
-#this is the 1st push ---
