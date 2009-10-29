@@ -13,6 +13,7 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		C415BE6B109A3C5E00C9C283 /* CheckListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C415BE6A109A3C5E00C9C283 /* CheckListController.m */; };
 		C48BBA801094D62700888FF6 /* DisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BBA7F1094D62700888FF6 /* DisclosureButtonController.m */; };
 		C48BBAA91094EF5F00888FF6 /* DisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BBAA81094EF5F00888FF6 /* DisclosureDetailController.m */; };
 		C48BBAAB1094F27600888FF6 /* DisclosureDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48BBAAA1094F27600888FF6 /* DisclosureDetail.xib */; };
@@ -40,6 +41,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Nav_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nav_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Nav-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Nav-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C415BE69109A3C5E00C9C283 /* CheckListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListController.h; sourceTree = "<group>"; };
+		C415BE6A109A3C5E00C9C283 /* CheckListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListController.m; sourceTree = "<group>"; };
 		C48BBA7E1094D62700888FF6 /* DisclosureButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureButtonController.h; sourceTree = "<group>"; };
 		C48BBA7F1094D62700888FF6 /* DisclosureButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureButtonController.m; sourceTree = "<group>"; };
 		C48BBAA71094EF5F00888FF6 /* DisclosureDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureDetailController.h; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				C48BBA7F1094D62700888FF6 /* DisclosureButtonController.m */,
 				C48BBAA71094EF5F00888FF6 /* DisclosureDetailController.h */,
 				C48BBAA81094EF5F00888FF6 /* DisclosureDetailController.m */,
+				C415BE69109A3C5E00C9C283 /* CheckListController.h */,
+				C415BE6A109A3C5E00C9C283 /* CheckListController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				C4C8DCB3107B5FD7009E933D /* SecondLevelViewController.m in Sources */,
 				C48BBA801094D62700888FF6 /* DisclosureButtonController.m in Sources */,
 				C48BBAA91094EF5F00888FF6 /* DisclosureDetailController.m in Sources */,
+				C415BE6B109A3C5E00C9C283 /* CheckListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
