@@ -66,7 +66,7 @@
 	 cell.textLabel.text = [list objectAtIndex:row];
 	 
 	 cell.accessoryType = (row == oldRow && lastIndexPath != nil) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
-	 
+	 //NSLog(@"The cell accesory type is: %@", cell.accessoryType);
 	 return cell;
 	
 }
@@ -80,18 +80,20 @@
 	int oldRow = (lastIndexPath != nil) ? [lastIndexPath row] : -1;
 	
 	if (newRow != oldRow) {
-		UITableViewCell *newCell = [tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath];
+		//NSLog(@"A new row has been selected for checking ---");
+		UITableViewCell *newCell = [tableView cellForRowAtIndexPath:indexPath];
 		
 		newCell.accessoryType = UITableViewCellAccessoryCheckmark;
 		
-		UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath];
+		UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:lastIndexPath];
 		
 		oldCell.accessoryType = UITableViewCellAccessoryNone;
 		lastIndexPath = indexPath;
 		
 									
 	}
-	
+	//NSLog(@"The cell accesory type is: %@", cell.accessoryType);
+	//NSLog(@"This is the didSelectRowAtIndexPath method");
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 	 
