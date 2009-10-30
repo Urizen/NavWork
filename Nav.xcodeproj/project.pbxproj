@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		C4C8DCC7107B8242009E933D /* disclosureButtonControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C8DCBF107B8242009E933D /* disclosureButtonControllerIcon.png */; };
 		C4C8DCC8107B8242009E933D /* moveMeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C8DCC0107B8242009E933D /* moveMeIcon.png */; };
 		C4C8DCC9107B8242009E933D /* rowControlsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C8DCC1107B8242009E933D /* rowControlsIcon.png */; };
+		C4C9398F109AF7A2009470D3 /* RowControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C9398E109AF7A2009470D3 /* RowControlsController.m */; };
 		C4F32EE61097A6AF005F0FFC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C4F32EE51097A6AF005F0FFC /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		C4C8DCBF107B8242009E933D /* disclosureButtonControllerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosureButtonControllerIcon.png; sourceTree = "<group>"; };
 		C4C8DCC0107B8242009E933D /* moveMeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moveMeIcon.png; sourceTree = "<group>"; };
 		C4C8DCC1107B8242009E933D /* rowControlsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rowControlsIcon.png; sourceTree = "<group>"; };
+		C4C9398D109AF7A2009470D3 /* RowControlsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowControlsController.h; sourceTree = "<group>"; };
+		C4C9398E109AF7A2009470D3 /* RowControlsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowControlsController.m; sourceTree = "<group>"; };
 		C4F32EE51097A6AF005F0FFC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +95,8 @@
 				C48BBAA81094EF5F00888FF6 /* DisclosureDetailController.m */,
 				C415BE69109A3C5E00C9C283 /* CheckListController.h */,
 				C415BE6A109A3C5E00C9C283 /* CheckListController.m */,
+				C4C9398D109AF7A2009470D3 /* RowControlsController.h */,
+				C4C9398E109AF7A2009470D3 /* RowControlsController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -180,7 +185,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Nav" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -224,6 +229,7 @@
 				C48BBA801094D62700888FF6 /* DisclosureButtonController.m in Sources */,
 				C48BBAA91094EF5F00888FF6 /* DisclosureDetailController.m in Sources */,
 				C415BE6B109A3C5E00C9C283 /* CheckListController.m in Sources */,
+				C4C9398F109AF7A2009470D3 /* RowControlsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
