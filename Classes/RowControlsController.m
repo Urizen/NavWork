@@ -66,4 +66,60 @@
 	return [list count];
 }
 
+
+//----------
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *ControlRowIdentifier = @"ControlRowIdentifier";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ControlRowIdentifier];
+	
+	if (cell == nil) {
+		
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ControlRowIdentifier] autorelease];
+	
+		UIImage *buttonUpImage = [UIImage imageNamed:@"button_up.png"];
+		UIImage *buttonDownImage = [UIImage imageNamed:@"button_down.png"];
+		
+		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+		button.frame = CGRectMake(0.0, 0.0, buttonUpImage.size.width, buttonUpImage.size.height);
+		[button setBackgroundImage:buttonUpImage forState:UIControlStateNormal];
+		[button setBackgroundImage:buttonDownImage forState:UIControlStateHighlighted];
+		[button setTitle:@"Tap" forState:UIControlStateNormal];
+		[button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+		
+		cell.accessoryView = button;
+	}
+	
+	NSUInteger row = [indexPath row];
+	NSString *rowTitle = [list objectAtIndex:row];
+	cell.textLabel.text = rowTitle;
+	
+	
+	return cell;
+	
+}
+
+#pragma mark -
+#pragma mark Table Delegate Methods
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	NSUInteger row = [indexPath row];
+
+	NSString *rowTitle = [list objectAtIndex:row];
+	
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You tapped the row."
+													message:[NSString stringWithFormat:@"You tapped %@.", rowTitle]
+												   delegate:nil
+										  cancelButtonTitle:@"OK"
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+	
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+	
+}
+
+
 @end

@@ -10,6 +10,7 @@
 #import "SecondLevelViewController.h"
 #import "DisclosureButtonController.h"
 #import "CheckListController.h"
+#import	"RowControlsController.h"
 
 @implementation FirstLevelViewController
 
@@ -25,17 +26,23 @@
 	DisclosureButtonController *disclosureButtonController = [[DisclosureButtonController alloc] initWithStyle:UITableViewStylePlain];
 	disclosureButtonController.title = @"Disclosure Buttons";
 	disclosureButtonController.rowImage = [UIImage imageNamed:@"disclosureButtonControllerIcon.png"];
-	[array addObject:disclosureButtonController];
+	[array addObject:disclosureButtonController];	
+	[disclosureButtonController release];
 	
 	//Check List Button
 	CheckListController *checkListController = [[CheckListController alloc] initWithStyle:UITableViewStylePlain];
 	checkListController.title = @"Check List";
 	checkListController.rowImage = [UIImage imageNamed:@"checkmarkControllerIcon.png"];
 	[array addObject:checkListController];
-	
-	
-	[disclosureButtonController release];
 	[checkListController release];
+	
+	//Table Row Controlls
+	RowControlsController *rowControlsController = [[RowControlsController alloc] initWithStyle:UITableViewStylePlain];
+	rowControlsController.title = @"Row Controls";
+	rowControlsController.rowImage = [UIImage imageNamed:@"rowControlsIcon.png"];
+	[array addObject:rowControlsController];
+	[rowControlsController release];
+	
 	
 	self.controllers = array;
 	[array release];
