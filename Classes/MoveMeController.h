@@ -10,7 +10,13 @@
 #import "SecondLevelViewController.h"
 
 @interface MoveMeController : SecondLevelViewController {
+	
+	NSMutableArray *list;
 
 }
+
+@property (nonatomic, retain) NSMutableArray *list;
+
+- (IBAction) toggleMove;
 
 @end
