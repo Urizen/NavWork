@@ -11,6 +11,8 @@
 #import "DisclosureButtonController.h"
 #import "CheckListController.h"
 #import	"RowControlsController.h"
+#import"MoveMeController.h"
+
 
 @implementation FirstLevelViewController
 
@@ -42,6 +44,13 @@
 	rowControlsController.rowImage = [UIImage imageNamed:@"rowControlsIcon.png"];
 	[array addObject:rowControlsController];
 	[rowControlsController release];
+	
+	//Move Me
+	MoveMeController *moveMeController = [[MoveMeController alloc] initWithStyle:UITableViewStylePlain];
+	moveMeController.title = @"Move Me";
+	moveMeController.rowImage = [UIImage imageNamed:@"moveMeIcon.png"];
+	[array addObject:moveMeController];
+	[moveMeController release];
 	
 	
 	self.controllers = array;

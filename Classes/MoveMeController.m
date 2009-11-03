@@ -29,7 +29,7 @@
 	
 	if (list == nil) {		
 		
-		NSArray *array = [[NSArray alloc] initWithObjects:@"Eeney", @"Meeny", @"Miney", @"Moe", @"Catch", @"A", @"Tiger", @"By",
+		NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Eeney", @"Meeny", @"Miney", @"Moe", @"Catch", @"A", @"Tiger", @"By",
 						  @"The", @"Toe", nil];
 		
 		self.list = array;
@@ -67,6 +67,50 @@
 	return [list count];
 }
 
-//this is where I'm up to
+//----------
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *MoveMeCellIdentifier = @"MoveMeCellIdentifier";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MoveMeCellIdentifier];
+	
+	if (cell == nil) {
+		
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MoveMeCellIdentifier] autorelease];
+		
+				
+		cell.showsReorderControl = YES;
+	}
+	
+	NSUInteger row = [indexPath row];
+	
+	cell.textLabel.text = [list objectAtIndex:row];
+	
+	
+	return cell;
+	
+}
+
+- (UITableViewCellEditingStyle) tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	return UITableViewCellEditingStyleNone;
+}
+
+- (BOOL) tableView:(UITableView *)tableView canMoveRowAtIndexPath: (NSIndexPath *)indexPath {
+	
+	return YES;
+}
+
+- (void) tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+	
+	NSUInteger fromRow = [fromIndexPath row];
+	NSUInteger toRow = [toIndexPath row];
+	
+	id object = [[list objectAtIndex:fromRow] retain];
+	[list removeObjectAtIndex:fromRow];
+	[list insertObject:object atIndex:toRow];
+	[object release];
+}
+
 
 @end
