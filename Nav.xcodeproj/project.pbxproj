@@ -30,6 +30,8 @@
 		C4C8DCC9107B8242009E933D /* rowControlsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4C8DCC1107B8242009E933D /* rowControlsIcon.png */; };
 		C4C9398F109AF7A2009470D3 /* RowControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C9398E109AF7A2009470D3 /* RowControlsController.m */; };
 		C4F32EE61097A6AF005F0FFC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C4F32EE51097A6AF005F0FFC /* .gitignore */; };
+		C4F4CF6610A222D200BD5B8E /* DeleteMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F4CF6510A222D200BD5B8E /* DeleteMeController.m */; };
+		C4F4CF7010A22B8300BD5B8E /* computers.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4F4CF6F10A22B8300BD5B8E /* computers.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,9 @@
 		C4C9398D109AF7A2009470D3 /* RowControlsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowControlsController.h; sourceTree = "<group>"; };
 		C4C9398E109AF7A2009470D3 /* RowControlsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowControlsController.m; sourceTree = "<group>"; };
 		C4F32EE51097A6AF005F0FFC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C4F4CF6410A222D200BD5B8E /* DeleteMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteMeController.h; sourceTree = "<group>"; };
+		C4F4CF6510A222D200BD5B8E /* DeleteMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteMeController.m; sourceTree = "<group>"; };
+		C4F4CF6F10A22B8300BD5B8E /* computers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = computers.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,8 @@
 				C4C9398E109AF7A2009470D3 /* RowControlsController.m */,
 				C41FCEB6109E436D006D51EA /* MoveMeController.h */,
 				C41FCEB7109E436D006D51EA /* MoveMeController.m */,
+				C4F4CF6410A222D200BD5B8E /* DeleteMeController.h */,
+				C4F4CF6510A222D200BD5B8E /* DeleteMeController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -139,6 +146,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4F4CF6F10A22B8300BD5B8E /* computers.plist */,
 				C4C8DCBA107B8242009E933D /* button_down.png */,
 				C4C8DCBB107B8242009E933D /* button_up.png */,
 				C4C8DCBC107B8242009E933D /* checkmarkControllerIcon.png */,
@@ -217,6 +225,7 @@
 				C4C8DCC9107B8242009E933D /* rowControlsIcon.png in Resources */,
 				C48BBAAB1094F27600888FF6 /* DisclosureDetail.xib in Resources */,
 				C4F32EE61097A6AF005F0FFC /* .gitignore in Resources */,
+				C4F4CF7010A22B8300BD5B8E /* computers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 				C415BE6B109A3C5E00C9C283 /* CheckListController.m in Sources */,
 				C4C9398F109AF7A2009470D3 /* RowControlsController.m in Sources */,
 				C41FCEB8109E436D006D51EA /* MoveMeController.m in Sources */,
+				C4F4CF6610A222D200BD5B8E /* DeleteMeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

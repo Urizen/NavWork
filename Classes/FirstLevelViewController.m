@@ -12,6 +12,7 @@
 #import "CheckListController.h"
 #import	"RowControlsController.h"
 #import"MoveMeController.h"
+#import "DeleteMeController.h"
 
 
 @implementation FirstLevelViewController
@@ -52,6 +53,12 @@
 	[array addObject:moveMeController];
 	[moveMeController release];
 	
+	//Delete Me
+	DeleteMeController *deleteMeController = [[DeleteMeController alloc] initWithStyle:UITableViewStylePlain];
+	deleteMeController.title = @"Delete me";
+	deleteMeController.rowImage = [UIImage imageNamed:@"deleteMeIcon.png"];
+	[array addObject:deleteMeController];
+	[deleteMeController release];
 	
 	self.controllers = array;
 	[array release];
