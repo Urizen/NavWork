@@ -14,6 +14,8 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		C415BE6B109A3C5E00C9C283 /* CheckListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C415BE6A109A3C5E00C9C283 /* CheckListController.m */; };
+		C41CC2B510A36756000F46BD /* President.m in Sources */ = {isa = PBXBuildFile; fileRef = C41CC2B410A36756000F46BD /* President.m */; };
+		C41CC2D110A37B6C000F46BD /* Presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = C41CC2D010A37B6C000F46BD /* Presidents.plist */; };
 		C41FCEB8109E436D006D51EA /* MoveMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41FCEB7109E436D006D51EA /* MoveMeController.m */; };
 		C48BBA801094D62700888FF6 /* DisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BBA7F1094D62700888FF6 /* DisclosureButtonController.m */; };
 		C48BBAA91094EF5F00888FF6 /* DisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C48BBAA81094EF5F00888FF6 /* DisclosureDetailController.m */; };
@@ -47,6 +49,9 @@
 		8D1107310486CEB800E47090 /* Nav-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Nav-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C415BE69109A3C5E00C9C283 /* CheckListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListController.h; sourceTree = "<group>"; };
 		C415BE6A109A3C5E00C9C283 /* CheckListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListController.m; sourceTree = "<group>"; };
+		C41CC2B310A36756000F46BD /* President.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = President.h; sourceTree = "<group>"; };
+		C41CC2B410A36756000F46BD /* President.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = President.m; sourceTree = "<group>"; };
+		C41CC2D010A37B6C000F46BD /* Presidents.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Presidents.plist; sourceTree = "<group>"; };
 		C41FCEB6109E436D006D51EA /* MoveMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMeController.h; sourceTree = "<group>"; };
 		C41FCEB7109E436D006D51EA /* MoveMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveMeController.m; sourceTree = "<group>"; };
 		C48BBA7E1094D62700888FF6 /* DisclosureButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureButtonController.h; sourceTree = "<group>"; };
@@ -109,6 +114,8 @@
 				C41FCEB7109E436D006D51EA /* MoveMeController.m */,
 				C4F4CF6410A222D200BD5B8E /* DeleteMeController.h */,
 				C4F4CF6510A222D200BD5B8E /* DeleteMeController.m */,
+				C41CC2B310A36756000F46BD /* President.h */,
+				C41CC2B410A36756000F46BD /* President.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C41CC2D010A37B6C000F46BD /* Presidents.plist */,
 				C4F4CF6F10A22B8300BD5B8E /* computers.plist */,
 				C4C8DCBA107B8242009E933D /* button_down.png */,
 				C4C8DCBB107B8242009E933D /* button_up.png */,
@@ -226,6 +234,7 @@
 				C48BBAAB1094F27600888FF6 /* DisclosureDetail.xib in Resources */,
 				C4F32EE61097A6AF005F0FFC /* .gitignore in Resources */,
 				C4F4CF7010A22B8300BD5B8E /* computers.plist in Resources */,
+				C41CC2D110A37B6C000F46BD /* Presidents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +255,7 @@
 				C4C9398F109AF7A2009470D3 /* RowControlsController.m in Sources */,
 				C41FCEB8109E436D006D51EA /* MoveMeController.m in Sources */,
 				C4F4CF6610A222D200BD5B8E /* DeleteMeController.m in Sources */,
+				C41CC2B510A36756000F46BD /* President.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
